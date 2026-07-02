@@ -29,7 +29,7 @@ a{text-decoration:none;color:inherit}
 
 /* HERO — editorial cover-hint */
 .hero{position:relative;height:100svh;min-height:600px;overflow:hidden;color:#fff}
-.hero>img{position:absolute;inset:0;z-index:-2}
+.hero>img{position:absolute;inset:0;z-index:-2;object-position:50% 20%}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;
   background:linear-gradient(100deg,rgba(10,10,10,.72),rgba(10,10,10,.25) 55%,rgba(10,10,10,.55))}
 .hero .wrap{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 7vw;max-width:820px}
