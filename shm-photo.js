@@ -19,6 +19,7 @@ a{text-decoration:none;color:inherit}
   padding:16px 6vw;color:#fff;background:linear-gradient(rgba(10,10,10,.9),transparent);transition:.3s}
 .nav.solid{background:var(--black);border-bottom:1px solid var(--line)}
 .mast{display:flex;flex-direction:column;line-height:1}
+.mast img{height:24px;width:auto;display:block}
 .mast .w{font-weight:800;letter-spacing:.34em;font-size:16px}
 .mast .u{width:34px;height:2px;background:var(--red);margin-top:5px}
 .nav .lk{display:flex;gap:26px;font-weight:600;font-size:12px;letter-spacing:.15em;text-transform:uppercase}
@@ -92,6 +93,7 @@ a{text-decoration:none;color:inherit}
 .contact .row a{min-width:180px}
 
 footer{background:#000;color:var(--grey);text-align:center;padding:50px 20px;border-top:1px solid var(--line)}
+footer .flogo{height:30px;width:auto;margin:0 auto 12px;display:block}
 footer .w{font-weight:800;letter-spacing:.34em;color:#fff;font-size:15px}
 footer .u{width:34px;height:2px;background:var(--red);margin:8px auto}
 footer .tg{letter-spacing:.3em;text-transform:uppercase;font-size:11px;margin-top:8px}
@@ -112,7 +114,7 @@ footer .cp{color:#555;font-size:11px;letter-spacing:.1em;margin-top:14px}
   .mbar a:last-child{border-right:0}.mbar a.red{background:var(--red)}
 }
 `;document.head.appendChild(s);var w=document.createElement('div');w.id='shm-photo';w.innerHTML=`<div class="nav" id="nav">
-  <div class="mast"><span class="w">SHAMASE</span><span class="u"></span></div>
+  <a class="mast" href="#"><img src="https://simzmkhwanazi.github.io/shamase-studios-web/logo-main.png" alt="Shamase Studios"></a>
   <div class="lk"><a href="#">Home</a><a class="act" href="#">Photo</a><a href="#">Video</a><a href="#">Studio Hire</a><a href="#contact">Contact</a></div>
   <a href="#contact" class="bk">Book Your Shoot</a>
   <div class="mnu">&#9776;</div>
@@ -206,7 +208,7 @@ footer .cp{color:#555;font-size:11px;letter-spacing:.1em;margin-top:14px}
   </div>
 </section>
 
-<footer><div class="w">SHAMASE STUDIOS</div><div class="u"></div><div class="tg">Imagine. Create.</div>
+<footer><img class="flogo" src="https://simzmkhwanazi.github.io/shamase-studios-web/logo-main.png" alt="Shamase Studios"><div class="tg">Imagine. Create.</div>
   <div class="cp">© 2026 Shamase Studios · Johannesburg · Photography</div></footer>
 
 <!-- mobile one-tap contact -->
