@@ -8,6 +8,7 @@
   var sc=document.createElement('script');sc.src=BASE+"content.js?ts="+Date.now();sc.onload=build;sc.onerror=build;document.head.appendChild(sc);
 
   var WA="",MAIL="",C=null;
+  function navHTML(){return '<div class="nav" id="nav"><a class="mast" href="#"><img src="'+BASE+'logo-main.png" alt="Shamase Studios"></a><div class="lk"><a href="#">Home</a><a class="act" href="#">Photo</a><a href="#">Video</a><a href="#">Studio Hire</a><a href="#contact">Contact</a></div><a href="#contact" class="bk">Book Your Shoot</a><div class="mnu">&#9776;</div></div>';}
   function heroHTML(){var c=C.cover||{};
     return '<header class="hero"><img src="'+IMG(c.image)+'" alt="">'
     +'<div class="wrap"><div class="kh">'+esc(c.kicker)+'</div>'
@@ -76,7 +77,7 @@
     var l=document.createElement('link');l.rel='stylesheet';l.href=FONTS_URL;document.head.appendChild(l);
     var st=document.createElement('style');st.textContent=CSS_TEXT;document.head.appendChild(st);
     var w=document.createElement('div');w.id='shm-photo';
-    w.innerHTML=heroHTML()+staticHTML()+spreadsHTML()+praiseHTML()+contactHTML()+footerHTML();
+    w.innerHTML=navHTML()+heroHTML()+staticHTML()+spreadsHTML()+praiseHTML()+contactHTML()+footerHTML();
     document.body.appendChild(w);
     document.documentElement.style.overflow='hidden';document.body.style.overflow='hidden';
     var nv=w.querySelector('.nav');w.addEventListener('scroll',function(){if(nv)nv.classList.toggle('solid',w.scrollTop>60);});
